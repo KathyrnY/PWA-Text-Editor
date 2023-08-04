@@ -13,6 +13,8 @@
 
   * [Visual](visual)
 
+  * [Link](link)
+
   * [Installation](#installation)
 
   * [Credits](#credits)
@@ -20,14 +22,19 @@
   * [License](#license)
 
   ## Visual
-  
 
+  ![image](https://github.com/KathyrnY/PWA-Text-Editor/assets/127566404/4a176af6-de34-4dcd-851e-0defca73637a)
+  
+  ## Link
+
+  https://pwa-text-editor78-62ded2529dec.herokuapp.com/
 
   ## Installation
 
   1) You need to clone this repo to your local machine
   2) run npm install to install your dependencies
   3) run npm run start
+  4) Alternatively, you can click the deloyed application link to test it out!
 
   ## Credits
   
