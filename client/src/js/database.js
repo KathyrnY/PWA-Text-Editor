@@ -18,7 +18,7 @@ export const putDb = async (content) => {
       const db = await openDB('jate', 1);
       const tx = db.transaction('jate', 'readwrite');
       const store = tx.objectStore('jate');
-      const request = store.put({ text: content });
+      const request = store.put({ key: 'header', text: content });
       const result = await request;
       console.log('Data saved to DB!', result);
     } catch (error) {
@@ -37,7 +37,7 @@ export const getDb = async () => {
     const result = await request;
     console.log('result', result);
 
-    return result.length > 0 ? result[0] : result;
+    return result ? result.text : null;
   } catch (error) {
     console.error('Error during the retrieval of data from DB', error);
     return null;
